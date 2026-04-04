@@ -3,9 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electrical Engineering Portfolio</title>
+    <title>Justin Biron - Electrical Engineering Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>EE Portfolio Under Construction</h1>
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-left">
+                <h1 class="name"><a href="index.html">Justin Biron</a></h1>
+            </div>
+            <nav class="header-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="https://github.com/justinbiron" target="_blank" class="nav-link">GitHub</a>
+                <a href="https://www.linkedin.com/in/justin-biron-047734400/" target="_blank" class="nav-link">LinkedIn</a>
+                <a href="resume.html" class="nav-link">Resume</a>
+                <span class="toggle-separator">|</span>
+                <div class="language-toggle">
+                    <a href="index.html" class="nav-link active-language">EN</a>
+                    <a href="fr/index.html" class="nav-link">FR</a>
+                </div>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">Dark Mode</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="intro">
+            <h2>Electrical Engineering Projects</h2>
+            <p>A collection of my engineering projects and technical work</p>
+        </section>
+
+        <section class="projects-gallery">
+            <!-- Project Card 1 -->
+            <article class="project-card">
+                <a href="projects/project-1.html" class="project-link">
+                    <div class="project-image-container">
+                        <img src="assets/project-1-thumbnail.jpg" alt="Project 1" class="project-thumbnail">
+                    </div>
+                    <div class="project-info">
+                        <p class="project-year-label">2024</p>
+                        <h3 class="project-title">Project Title</h3>
+                        <p class="project-description">Brief description of your first project and what you accomplished.</p>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Project Card 2 -->
+            <article class="project-card">
+                <a href="projects/project-2.html" class="project-link">
+                    <div class="project-image-container">
+                        <img src="assets/project-2-thumbnail.jpg" alt="Project 2" class="project-thumbnail">
+                    </div>
+                    <div class="project-info">
+                        <p class="project-year-label">2024</p>
+                        <h3 class="project-title">Project Title</h3>
+                        <p class="project-description">Brief description of your second project and what you accomplished.</p>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Project Card 3 -->
+            <article class="project-card">
+                <a href="projects/project-3.html" class="project-link">
+                    <div class="project-image-container">
+                        <img src="assets/project-3-thumbnail.jpg" alt="Project 3" class="project-thumbnail">
+                    </div>
+                    <div class="project-info">
+                        <p class="project-year-label">2023</p>
+                        <h3 class="project-title">Project Title</h3>
+                        <p class="project-description">Brief description of your third project and what you accomplished.</p>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Project Card 4 -->
+            <article class="project-card">
+                <a href="projects/project-4.html" class="project-link">
+                    <div class="project-image-container">
+                        <img src="assets/project-4-thumbnail.jpg" alt="Project 4" class="project-thumbnail">
+                    </div>
+                    <div class="project-info">
+                        <p class="project-year-label">2023</p>
+                        <h3 class="project-title">Project Title</h3>
+                        <p class="project-description">Brief description of your fourth project and what you accomplished.</p>
+                    </div>
+                </a>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Justin Biron. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
