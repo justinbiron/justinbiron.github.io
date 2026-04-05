@@ -217,7 +217,7 @@ body {
     background-color: var(--white);
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: var(--shadow);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
     transition: all 0.3s ease;
 }
 
@@ -229,7 +229,7 @@ body {
 
 .project-card:hover {
     transform: translateY(-8px);
-    box-shadow: var(--shadow-hover);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
 }
 
 .project-link {
