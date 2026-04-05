@@ -204,26 +204,27 @@ body {
 
 /* ==================== Projects Gallery ==================== */
 .projects-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 2rem;
     margin-bottom: 2rem;
 }
 
-@media (max-width: 768px) {
-    .projects-gallery {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-}
-
-/* ==================== Project Card ==================== */
 .project-card {
+    width: 75vw;
+    max-width: 100%;
     background-color: var(--white);
     border-radius: 8px;
     overflow: hidden;
     box-shadow: var(--shadow);
     transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        width: min(96vw, 100%);
+    }
 }
 
 .project-card:hover {
@@ -240,15 +241,13 @@ body {
 
 .project-image-container {
     width: 100%;
-    padding-bottom: 75%;
     overflow: hidden;
     background-color: var(--light-bg);
 }
 
 .project-thumbnail {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
     display: block;
     transition: transform 0.3s ease;
 }
